@@ -1,0 +1,47 @@
+name: "Bug Report"
+description: "Report a bug or glitch on the WorldMC server"
+title: "[Bug] "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill this out so we can reproduce and fix the bug quickly.
+  - type: textarea
+    id: description
+    attributes:
+      label: "Describe the bug"
+      description: "A clear and concise description of what the bug is."
+      placeholder: "Players can duplicate items using /town spawn under certain conditions..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      placeholder: |
+        1. Go to ...
+        2. Use command ...
+        3. Observe ...
+  - type: input
+    id: expected
+    attributes:
+      label: "Expected Behavior"
+      placeholder: "What you expected to happen"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots or Video"
+      description: "If applicable, attach media or logs."
+  - type: input
+    id: username
+    attributes:
+      label: "Minecraft Username"
+      placeholder: "Optional, if we need to contact you in-game."
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "I checked existing bug reports to avoid duplicates."
+          required: true
