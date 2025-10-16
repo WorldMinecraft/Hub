@@ -1,0 +1,35 @@
+name: "Feature Request"
+description: "Suggest a new feature or improvement for WorldMC"
+title: "[Feature] "
+labels: ["feature request", "suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve WorldMC! Please describe your idea clearly so we can discuss and evaluate it.
+  - type: input
+    id: summary
+    attributes:
+      label: "Feature Summary"
+      description: "One-line description of what you want to add."
+      placeholder: "Example: Add custom sand-mining tool"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "Detailed Explanation"
+      description: "Explain how this feature would work in-game, and why it would improve gameplay."
+      placeholder: "When a player uses the Sand Shovel, it turns dirt into sand they can collect..."
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Why do you want this?"
+      description: "What problem does this solve or what new gameplay does it enable?"
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "I checked existing issues to avoid duplicates."
+          required: true
