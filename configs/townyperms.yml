@@ -221,6 +221,7 @@ towns:
 
     commander:
     - towny.command.town.spawn
+    - raid.initiate
     - raid.participate
 
     warden:
@@ -306,12 +307,10 @@ nations:
     marshal:
     - towny.command.nation.enemy
     - towny.command.nation.spawn
-    - raid.initiate
     - raid.participate
 
     captain:
     - towny.command.nation.spawn
-    - raid.initiate
     - raid.participate
 
     noble:
